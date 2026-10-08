@@ -45,3 +45,15 @@ if (chunks.length !== 1 || chunks[0].imports.some((dependency) => !dependency.st
 writeFileSync(workerEntry, chunks[0].code);
 
 console.log('Self-contained Sites worker entrypoint prepared: dist/server/index.js');
+
+// Готовая статика для хостингов без Node: страница собирается заранее,
+// адрес формы переключается на PHP.
+if (process.env.SKIP_PRERENDER !== '1') {
+  const prerender = spawnSync(process.execPath, [path.join(process.cwd(), 'scripts/prerender.mjs')], {
+    stdio: 'inherit',
+  });
+  if (prerender.status !== 0) {
+    console.error('Не удалось собрать статическую страницу.');
+    process.exit(prerender.status ?? 1);
+  }
+}
