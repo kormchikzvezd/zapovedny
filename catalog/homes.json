@@ -1,0 +1,12 @@
+[
+  { "id": "5/1", "name": "Казачья, 5/1", "layout": "standard", "mapUrl": "https://2gis.ru/tomsk/search/Казачья улица 5%2F1, Коларово", "status": "available" },
+  { "id": "5/2", "name": "Казачья, 5/2", "layout": "standard", "mapUrl": "https://2gis.ru/tomsk/search/Казачья улица 5%2F2, Коларово", "status": "available" },
+  { "id": "6/1", "name": "Казачья, 6/1", "layout": "standard", "mapUrl": "https://2gis.ru/tomsk/search/Казачья улица 6%2F1, Коларово", "status": "available" },
+  { "id": "6/2", "name": "Казачья, 6/2", "layout": "standard", "mapUrl": "https://2gis.ru/tomsk/search/Казачья улица 6%2F2, Коларово", "status": "available" },
+  { "id": "7/1", "name": "Казачья, 7/1", "layout": "extra-room", "mapUrl": "https://2gis.ru/tomsk/geo/70030077014628041", "status": "available" },
+  { "id": "7/2", "name": "Казачья, 7/2", "layout": "extra-room", "mapUrl": "https://2gis.ru/tomsk/geo/70030077041221293", "status": "available" },
+  { "id": "8/1", "name": "Казачья, 8/1", "layout": "standard", "mapUrl": "https://2gis.ru/tomsk/geo/70030077014628503", "status": "available" },
+  { "id": "8/2", "name": "Казачья, 8/2", "layout": "standard", "mapUrl": "https://2gis.ru/tomsk/geo/70030077014628518", "status": "available" },
+  { "id": "11/1", "name": "Казачья, 11/1", "layout": "confirm", "mapUrl": "https://2gis.ru/tomsk/geo/70030077014628287", "status": "available" },
+  { "id": "11/2", "name": "Казачья, 11/2", "layout": "confirm", "mapUrl": "https://2gis.ru/tomsk/search/Казачья улица 11%2F2, Коларово", "status": "available" }
+]

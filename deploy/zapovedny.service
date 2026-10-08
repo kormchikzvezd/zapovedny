@@ -1,0 +1,29 @@
+[Unit]
+Description=Zapovedny site
+After=network.target
+
+[Service]
+Type=simple
+User=zapovedny
+Group=zapovedny
+WorkingDirectory=/opt/zapovedny/app
+EnvironmentFile=/opt/zapovedny/app/.env
+ExecStart=/usr/bin/node server/server.mjs
+Restart=always
+RestartSec=5
+
+# После падения не копим мусор в памяти.
+MemoryMax=512M
+
+# Сайт только читает свои файлы и пишет в каталог с базой.
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/zapovedny/data
+
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
